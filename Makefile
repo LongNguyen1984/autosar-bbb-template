@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -IApp -IRTE -IBSW/Drivers -IBSW/Scheduler -IConfig
+CFLAGS = -Wall -IInclude -Wextra -IApp -IRTE -IBSW/Drivers -IBSW/Scheduler -IConfig 
 
 SRC = $(wildcard App/*.c RTE/*.c BSW/**/*.c)
 OBJ = $(SRC:.c=.o)
